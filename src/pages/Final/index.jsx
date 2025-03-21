@@ -55,7 +55,7 @@ export default function Final() {
           <p>Eu amo colecionar todas as nossas
             fotinhas juntos!</p>
         </div>
-        <div><img src="./assets/images/badtzGif.gif" alt="star" /></div>
+        <div><img src="./assets/images/miAmor.png" alt="star" /></div>
       </div>
       {click >= 1 && (
         <div className="sessao">
