@@ -1,12 +1,13 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Inicio() {
 
   const [click, setClick] = useState(1);
   const [fade, setFade] = useState(false);
-
+  const [titleEffect, setTitleEffect] = useState("Oi meu neném!!");
+  
   function handleClick() {
     setFade(true);
     setTimeout(() => {
@@ -14,10 +15,20 @@ export default function Inicio() {
       if (click === 3) {
         setClick(1);
       }
+      if (click === 1) {
+        setTitleEffect("Eita poxa!");
+      }
+      if (click === 2) {
+        setTitleEffect("Vamos, vamos!!");
+      }
       setFade(false);
     }, 1000); // Match the duration of the fade-out animation
   }
 
+  useEffect(() => {
+    document.title = titleEffect;
+  }, [titleEffect]);
+  
   return (
     <div className="Inicio">
       {click === 1 ? (
