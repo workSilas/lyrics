@@ -22,7 +22,7 @@ export default function Inicio() {
         setTitleEffect("Vamos, vamos!!");
       }
       setFade(false);
-    }, 1000); // Match the duration of the fade-out animation
+    }, 1000); 
   }
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export default function Inicio() {
               <h1>Sim senhorita!</h1>
               <p>Aqui vai!</p>
               <div>
-                <Link to={"/"}>
+                <Link to={"/Final"}>
                   <img src="./assets/images/Star.png" alt="star" />
                 </Link>
               </div>

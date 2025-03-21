@@ -1,0 +1,143 @@
+@keyframes girarDireita {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girarEsquerda {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.Final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  padding: 0 20px;
+
+  img {
+    width: 100px;
+  }
+
+  .sessao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #393126;
+    padding: 10px 10px;
+    width: 90%;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+
+    .texto {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .mini {
+        font-size: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    #timer {
+      align-items: center;
+    }
+
+    .star {
+      width: 50px;
+      animation: girarDireita 6s linear infinite;
+    }
+
+    #direita {
+      animation: girarEsquerda 6s linear infinite;
+    }
+
+    #final {
+      align-items: center;
+
+      text-align: center;
+
+      h1 {
+        color: #E3074D;
+      }
+    }
+  }
+
+  .assinatura {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+
+    p {
+      font-size: 0.8rem;
+      align-self: self-end;
+    }
+
+    .texto {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+
+  button {
+    animation: fadeIn 2s ease-in-out;
+
+    &.fade-out {
+      animation: fadeOut 2s ease-in-out;
+    }
+  }
+}
