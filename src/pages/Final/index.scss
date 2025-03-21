@@ -53,6 +53,7 @@
 
   img {
     width: 100px;
+    background-color: none;
   }
 
   .sessao {
@@ -61,7 +62,7 @@
     align-items: center;
     border: 1px solid #393126;
     padding: 10px 10px;
-    width: 90%;
+    width: 98%;
     justify-content: center;
     animation: fadeIn 1s ease-in-out;
 
