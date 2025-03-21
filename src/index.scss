@@ -1,4 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
+
+  background-color: #695441;
+  color: #fff;
+
+  h1,
+  h2,
+  p {
+    font-family: 'Joan', serif;
+  }
+
+  h1 {
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+
+    background-color: #393126;
+    color: #fff;
+
+    padding: 7px 40px;
+    border-radius: 12px;
+  }
+
+  a:hover {
+    background-color: #1D1A15;
+    transition: 0.5s;
+  }
+
+  button {
+    all: unset;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+
+    background-color: #393126;
+    color: #fff;
+
+    padding: 7px 40px;
+    border-radius: 12px;
+  }
+
+  button:hover {
+    background-color: #1D1A15;
+    transition: 0.5s;
+  }
 }
